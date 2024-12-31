@@ -40,7 +40,7 @@ def averageCalc(dataDict, name):
     for i in dataDict[name]:
         sum += i
     return "%.2f" % (sum / len(dataDict[name]))
-    
+        
     
 print(averageCalc(student_marks, query_name))
 
