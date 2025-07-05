@@ -13,17 +13,19 @@ def count_substring(string, sub_string):
         if listMain[i] == listSub[0]:
             for j in range(len(listSub)):
                 if i+j < len(listMain) and listMain[i+j] == listSub[j]:
-                    #print("\n\n", i, j, i+j, listMain[i+j], listSub[j]  )
-                    print(listMain[i+j], listSub[j])
+                    print("\n\n", i, j, i+j, listMain[i+j], listSub[j])
+                    #print(listMain[i+j], listSub[j])
                     ct+=1
                     if ct == len(listSub):
                         counter += 1
                         ct = 0
-        
+                #else:
+                    #break
     """
-    14 - l
-    15 - d
-    16 - ,
+
+    i= 18
+    j= 0
+    
 
     """
     return counter
