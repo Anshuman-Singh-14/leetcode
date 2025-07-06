@@ -18,7 +18,11 @@ def count_substring(string, sub_string):
                     if ct == len(listSub):
                         counter += 1
                         ct = 0
+        
     """
+    14 - l
+    15 - d
+    16 - ,
 
     """
     return counter
