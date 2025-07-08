@@ -1,5 +1,6 @@
 
 
+
 """
 
 
@@ -13,7 +14,7 @@ m is odd, n is 3*n
 d = ".|."
 
 
-------------.|.------------
+--- --- --- --- .|. --- --- --- ---
 ---------.|..|..|.---------
 ------.|..|..|..|..|.------
 ---.|..|..|..|..|..|..|.---
@@ -40,13 +41,29 @@ welcome = "WELCOME"
 
 
 #top half
+#(n-1)/2 iterations
+"""
+
+divide by 3 for each row
+
+"""
 
 
 
 
 
-#middle
 
-print(.center(welcome, 27))
+for i in range(0, n // 2):
+    print(((n//2)-i)*'---' + d*(2*i+1) + ((n//2)-i)*'---')
 
-#bottom half
+
+
+print(welcome.center(3*n, "-"))
+
+
+for i in range((n // 2)-1, -1, -1):
+
+
+    print(((n//2)-i)*'---' + d*((2*i)+1) + ((n//2)-i)*'---')
+
+
