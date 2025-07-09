@@ -15,7 +15,7 @@ for i in range(n // 2):
 
 
 
-print(welcome.center(27, "-"))
+print(welcome.center(3*n, "-"))
 
 
 for i in range(n // 2, -1, -1):
